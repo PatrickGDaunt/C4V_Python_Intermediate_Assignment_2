@@ -1,10 +1,12 @@
 """
-    Project name: Assignment2
+    Project name: Assignment 2
+    File name: CharacterCreator.py
     Author: Patrick D
-    Date created: 2020-07-16
-    Date last modified: 2020-07-16
+    DTG created: 14 1423(Z-4) July 2020
+    DTG last modification: 16 2112(Z-4) July 2020
     Python Version: 3.7.4
-    Purpose: Create characters for a game with user input
+    Description: Create a character for a video game
+    Classes: Char, RaceElf(Char)
 """
 
 
