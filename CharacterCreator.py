@@ -43,12 +43,19 @@ class RaceElf(Char):
         # Child class attribute stealth modifier
         self.stealth_modifier = 2
 
+    # Create function to display the object's description
     def describe_elf_moodifiers(self):
         """Print statement describing elven race modifiers"""
         print(f"The elf, {self.name}, has a +{self.stealth_modifier} stealth modifier, and an attack"
               f" strength of {self.a_s}")
 
+    # Create function to ask user for name
+    def ask_user_char_name():
+        """Request a character name for an RaceElf object"""
+        char_name = input("Please enter the character's name>> ")
+        return char_name
+
 # Create elf object
-elf1 = RaceElf("Legolas")
+elf1 = RaceElf(RaceElf.ask_user_char_name())
 # Print description of elf1 modifiers
 print(elf1.describe_elf_moodifiers())

@@ -10,5 +10,8 @@
 '''
 # Importing all the required packages
 import requests
-import unittest
-
+apicall = "https://api.github.com/search/repositories?q=language:python&sort=stars"
+r = requests.get(apicall)
+rDict = r.json()
+numRepos = rDict["total_count"]
+print(numRepos)
