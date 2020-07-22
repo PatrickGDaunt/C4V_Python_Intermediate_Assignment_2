@@ -3,7 +3,7 @@
     File name: Test.py
     Author: Patrick D
     DTG created: 16 2224 (Z-4) July 2020
-    DTG last modification: 16 2230 (Z-4) July 2020
+    DTG last modification: 22 1748 (Z-4) July 2020
     Python Version: 3.7.4
     Description: Test cases and unit tests for CharacterCreator.py
     Classes:
@@ -11,6 +11,7 @@
 # Importing all the required packages
 import requests
 import unittest
+from assignment2 import CharacterCreator as cc
 
 def make_api_call(api_call):
     """Request repos from Github sorted by stars, and return total repo count"""
@@ -27,16 +28,12 @@ class unitTest(unittest.TestCase):
     def test_api_call(self):
         api_call = "https://api.github.com/search/repositories?q=language:python&sort=stars"
         # Create variable to hold output
-        output = make_api_call(api_call)
-        self.assertEqual(output, 5387258)
-
-def main():
-    print(make_api_call("https://api.github.com/search/repositories?q=language:python&sort=stars"))
+        output = cc.make_api_call(api_call)
+        self.assertEqual(output, 5238460)
 
 
-main()
-
-
+if __name__=='__main__':
+    unittest.main()
 
 
 

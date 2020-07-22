@@ -52,7 +52,6 @@ class Char:
 # Declare child class to Char
 class RaceElf(Char):
     """Class for general class actions"""
-
     # Class constructor
     # Parameters: self, name for parent class
     def __init__(self, name):
@@ -66,11 +65,3 @@ class RaceElf(Char):
         """Print statement describing elven race modifiers"""
         print(f"The elf, {self.name}, has a +{self.stealth_modifier} stealth modifier, and an attack"
               f" strength of {self.a_s}")
-
-
-# Create main function for program execution
-def main():
-    create_obj()
-
-
-main()
