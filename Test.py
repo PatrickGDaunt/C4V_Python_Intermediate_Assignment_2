@@ -11,7 +11,7 @@
 # Importing all the required packages
 import requests
 import unittest
-from assignment2 import CharacterCreator as cc
+import CharacterCreator as cc
 
 def make_api_call(api_call):
     """Request repos from Github sorted by stars, and return total repo count"""

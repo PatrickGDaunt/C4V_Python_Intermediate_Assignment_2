@@ -9,7 +9,7 @@
 """
 
 # Import statements
-from assignment2 import CharacterCreator as cc
+import CharacterCreator as cc
 
 def main():
     """Creation of main function to execute program instructions as required"""
